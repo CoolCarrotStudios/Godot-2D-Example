@@ -17,6 +17,8 @@ func game_over():
 	$HUD.show_game_over()
 	$Music.stop()
 	$DeathSound.play()
+	$ScoreTimer.stop()
+	$MobTimer.stop()
 
 
 func _on_mob_timer_timeout():
